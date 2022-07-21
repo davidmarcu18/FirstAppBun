@@ -35,15 +35,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetails", sender: self)
-        
-    /*@IBAction func buttonPressed(_ sender: UIButton) {
-        switch sender.tag {
-            case 0: drawLines()
-            case 1: drawRectangle()
-            case 2: drawCircle()
-            default: print("default")
-        }
-    }*/
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
