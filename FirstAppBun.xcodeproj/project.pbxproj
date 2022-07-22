@@ -18,6 +18,7 @@
 		5FC58915288698B0002485E6 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC58914288698B0002485E6 /* Rectangle.swift */; };
 		5FC58917288698C8002485E6 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC58916288698C8002485E6 /* Triangle.swift */; };
 		5FC58919288698DC002485E6 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC58918288698DC002485E6 /* Shape.swift */; };
+		5FC5891D288A8461002485E6 /* ShapeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5891C288A8461002485E6 /* ShapeEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5FC58914288698B0002485E6 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		5FC58916288698C8002485E6 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		5FC58918288698DC002485E6 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		5FC5891C288A8461002485E6 /* ShapeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				5FC58914288698B0002485E6 /* Rectangle.swift */,
 				5FC58916288698C8002485E6 /* Triangle.swift */,
 				5FC58918288698DC002485E6 /* Shape.swift */,
+				5FC5891C288A8461002485E6 /* ShapeEnum.swift */,
 				5FC589032886967E002485E6 /* Assets.xcassets */,
 				5FC589052886967E002485E6 /* LaunchScreen.storyboard */,
 				5FC589082886967E002485E6 /* Info.plist */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC5890F288696EB002485E6 /* SecondViewController.swift in Sources */,
+				5FC5891D288A8461002485E6 /* ShapeEnum.swift in Sources */,
 				5FC588FF2886967C002485E6 /* ViewController.swift in Sources */,
 				5FC588FB2886967C002485E6 /* AppDelegate.swift in Sources */,
 				5FC58915288698B0002485E6 /* Rectangle.swift in Sources */,

@@ -10,6 +10,7 @@ import UIKit
 
 struct Rectangle: Shape{
     
+    var shapeEnum: ShapeEnum
     var color: UIColor
     var width: Double
     var height: Double
@@ -18,17 +19,15 @@ struct Rectangle: Shape{
         self.color = color
         self.width = width
         self.height = height
+        self.shapeEnum = .Rectangle
     }
     
     func perimeter() -> Double {
         width * 2 + height * 2
-        
     }
     
     func area() -> Double {
          width * height
-        
-        
     }
     
     
