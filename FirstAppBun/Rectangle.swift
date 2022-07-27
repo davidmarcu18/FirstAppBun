@@ -29,7 +29,4 @@ struct Rectangle: Shape{
     func area() -> Double {
          width * height
     }
-    
-    
-    
 }
