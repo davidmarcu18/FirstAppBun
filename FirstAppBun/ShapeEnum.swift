@@ -1,14 +1,8 @@
-//
-//  ShapeEnum.swift
-//  FirstAppBun
-//
-//  Created by David Alex Marcu on 22.07.2022.
-//
 
 import Foundation
 import UIKit
 
-enum ShapeEnum {
+enum ShapeEnum: String, Codable {
     case Circle
     case Triangle
     case Rectangle

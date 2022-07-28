@@ -1,15 +1,9 @@
-//
-//  ViewController.swift
-//  FirstAppBun
-//
-//  Created by David Alex Marcu on 19.07.2022.
-//
 
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-     var shape : [Shape] = [Circle(color: .red, radius: 2.4), Rectangle(color: .blue, width: 2, height: 3), Triangle(color: .red, side: 12, height: 8)]
+    var shape : [Shape] = [Circle(color: .red, radius: 2.4), Rectangle(color: .blue, width: 2, height: 3), Triangle(color: .red, side: 12, height: 8)]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,14 +20,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let shapeName = String(describing: type(of: shape[indexPath.row].self))
-        //let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.ReuseConstants.CustomCell, for: indexPath) as! CustomCell
         cell.setData(title: shapeName)
+        
         return cell
     }
     
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       let vc = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController
+       let vc = storyboard?.instantiateViewController(withIdentifier: Constants.ReuseConstants.SecondViewController) as? SecondViewController
        vc?.shape = shape[(tableView.indexPathForSelectedRow?.row)!]
        self.navigationController?.pushViewController(vc!, animated: true)
     }

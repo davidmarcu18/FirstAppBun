@@ -1,9 +1,3 @@
-//
-//  SecondViewController.swift
-//  FirstAppBun
-//
-//  Created by David Alex Marcu on 19.07.2022.
-//
 
 import UIKit
 
@@ -27,16 +21,16 @@ class SecondViewController: UIViewController {
     func determinShape() {
         switch (shape?.shapeEnum) {
         case .Circle:
-            drawCircle(circle: shape as! Circle)
+            drawCircle()
         case .Triangle:
-            drawLines(triangle: shape as! Triangle)
+            drawLines()
         case .Rectangle:
-            drawRectangle(rectangle: shape as! Rectangle)
+            drawRectangle()
         default: print("Nu- i bine boss")
         }
     }
     
-    func drawLines(triangle: Triangle) {
+    func drawLines() {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: 280, height: 250))
         let img = renderer.image { ctx in
             ctx.cgContext.move(to: CGPoint(x: 20.0, y: 20.0))
@@ -50,20 +44,20 @@ class SecondViewController: UIViewController {
         imageView.image = img
     }
         
-    func drawRectangle(rectangle: Rectangle) {
+    func drawRectangle() {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: 280, height: 250))
         let img = renderer.image { ctx in
-            let rectangle = CGRect(x: 0, y: 0, width: 280, height: 250)
+            let rect = CGRect(x: 0, y: 0, width: 280, height: 250)
             ctx.cgContext.setFillColor(UIColor.yellow.cgColor)
             ctx.cgContext.setStrokeColor(UIColor.gray.cgColor)
             ctx.cgContext.setLineWidth(20)
-            ctx.cgContext.addRect(rectangle)
+            ctx.cgContext.addRect(rect)
             ctx.cgContext.drawPath(using: .fillStroke)
         }
         imageView.image = img
     }
         
-    func drawCircle(circle: Circle) {
+    func drawCircle() {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: 280, height: 250))
         let img = renderer.image { ctx in
             let rect = CGRect(x: 5, y: 5, width: 270, height: 240)
