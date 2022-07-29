@@ -2,7 +2,7 @@
 import Foundation
 import UIKit
 
-struct Triangle: Shape {
+struct Triangle: Shape, Codable {
     
     var shapeEnum: ShapeEnum
     var color: UIColor
