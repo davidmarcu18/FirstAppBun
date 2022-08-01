@@ -2,7 +2,7 @@
 import Foundation
 import UIKit
 
-struct Rectangle: Shape{
+struct Rectangle: Shape, Codable {
     var shapeEnum: ShapeEnum
     var color: UIColor
     var width: Double
